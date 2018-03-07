@@ -236,7 +236,13 @@ The client then needs to keep a list of all the rotated keys so that if the clie
 ### Key Recovery
 
 
+
 ### Key Revocation
+Everytime a Key is rotated or compromised the key needs to be revoked which involves basically  stopping to use the key and then rotate to the new set of keys. Whenever a key is rotated the previous key ideally must be revoked. That may involve
+Informing the counterperties and further in case of highly senetive environments maintaining a time stamped list of revoked keys for reference.
+
+The DDIDs usually would just rotate to the next set of keys and have no overhead of a revocation process. However a Master key should never be revoked or rotated.
+
 
 
 
